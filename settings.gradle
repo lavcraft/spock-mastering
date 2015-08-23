@@ -1,0 +1,3 @@
+include 'chapter0'
+
+rootProject.name = 'spock-mastering'
