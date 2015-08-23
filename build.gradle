@@ -46,6 +46,11 @@ allprojects {
             configurations.all { it.resolve() }
         }
     }
+
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
 }
 
 subprojects {
@@ -65,11 +70,6 @@ subprojects {
         testCompile 'junit:junit'
         testCompile 'org.spockframework:spock-core'
     }
-}
-
-repositories {
-    mavenLocal()
-    jcenter()
 }
 
 idea {
